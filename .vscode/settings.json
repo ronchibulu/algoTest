@@ -4,5 +4,7 @@
         "./TechIndicators",
         "./Fundamental/DilutionTracker",
         "./Broker"
-    ]
+    ],
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "CodeGPT.Autocomplete.enabled": false
 }

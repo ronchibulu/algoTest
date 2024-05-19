@@ -12,7 +12,7 @@ async def getDilutionData():
     # modified file: C:\Users\RONCHIBULU\AppData\Roaming\Python\Python311\site-packages\ipykernel
     async with async_playwright() as p:
         pw = await async_playwright().start()
-        browser = await pw.chromium.launch(headless=False, slow_mo=50)
+        browser = await pw.chromium.launch_persistent_context(user_data_dir="./Fundamental/DilutionTracker/chrome-usr", headless=False, slow_mo=50)
         page = await browser.new_page()
         login_page = login(page)
         await login_page.login()
